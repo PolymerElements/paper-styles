@@ -1,0 +1,107 @@
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>paper-styles demo</title>
+    <link rel="import" href="../global.html">
+
+    <style>
+      .redlines {
+        background: linear-gradient(0deg, transparent, transparent 3.5px, rgba(255,0,0,0.2) 3.5px, rgba(255,0,0,0.2) 4px);
+        background-size: 100% 4px;
+      }
+      .paragraph {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>paper-styles</h1>
+
+    <section id="typography">
+      <h2>typography.html</h2>
+      <p>
+        Grumpy wizards make toxic brew for the evil Queen and Jack.
+      </p>
+      <section class="redlines paragraph">
+        <div paper-font="display4">Display 4</div>
+        <div paper-font="display3">Display 3</div>
+        <div paper-font="display2">Display 2</div>
+        <div paper-font="display1">Display 1</div>
+        <div paper-font="headline">Headline</div>
+        <div paper-font="title">Title</div>
+        <div paper-font="subhead">Subhead</div>
+        <div paper-font="body2">Body 2</div>
+        <div paper-font="body1">Body 1</div>
+        <div paper-font="caption">Caption</div>
+        <div paper-font="menu">Menu</div>
+        <div paper-font="button">Button</div>
+      </section>
+
+      <h3>Paragraphs</h3>
+
+      <h4>body2</h4>
+      <section paper-font="body2" class="redlines">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+          tincidunt dui sit amet mi auctor, ac gravida magna aliquam. Fusce quis
+          purus elementum, tempus nisi vel, volutpat nulla. Vestibulum mollis
+          dictum tellus, vulputate porttitor arcu. Curabitur imperdiet risus id
+          egestas accumsan. Donec lectus felis, dignissim id iaculis sit amet,
+          faucibus in leo.
+        </p>
+        <p>
+          Mauris id urna ac ante ultrices commodo a imperdiet elit. Vivamus
+          interdum neque magna, eget dapibus est auctor et. Donec accumsan
+          libero nec augue scelerisque, ac egestas ante tincidunt. Proin
+          sollicitudin, mi eget sagittis mollis, arcu orci scelerisque turpis, a
+          sollicitudin tellus quam non sapien.
+        </p>
+      </section>
+
+      <h4>body1</h4>
+      <section paper-font="body1" class="redlines">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+          tincidunt dui sit amet mi auctor, ac gravida magna aliquam. Fusce quis
+          purus elementum, tempus nisi vel, volutpat nulla. Vestibulum mollis
+          dictum tellus, vulputate porttitor arcu. Curabitur imperdiet risus id
+          egestas accumsan. Donec lectus felis, dignissim id iaculis sit amet,
+          faucibus in leo.
+        </p>
+        <p>
+          Mauris id urna ac ante ultrices commodo a imperdiet elit. Vivamus
+          interdum neque magna, eget dapibus est auctor et. Donec accumsan
+          libero nec augue scelerisque, ac egestas ante tincidunt. Proin
+          sollicitudin, mi eget sagittis mollis, arcu orci scelerisque turpis, a
+          sollicitudin tellus quam non sapien.
+        </p>
+      </section>
+    </section>
+
+
+    <section id="global">
+      <h2>global.html</h2>
+
+      <section class="redlines">
+        <h1>Heading Level 1 &lt;h1&gt;</h1>
+        <h2>Heading Level 2 &lt;h2&gt;</h2>
+        <h3>Heading Level 3 &lt;h3&gt;</h3>
+        <h4>Heading Level 4 &lt;h4&gt;</h4>
+        <h5>Heading Level 5 &lt;h5&gt;</h5>
+        <h6>Heading Level 6 &lt;h6&gt;</h6>
+        <a href="#global">Anchor &lt;a&gt;</a>
+      </section>
+  </body>
+</html>
