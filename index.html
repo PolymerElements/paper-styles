@@ -1,0 +1,324 @@
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+--><!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>paper-styles demo</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic">
+
+<!--
+Typographic styles are provided matching the Material Design standard styles:
+http://www.google.com/design/spec/style/typography.html#typography-standard-styles
+
+To make use of them, apply a `paper-font` attribute to elements, with a value
+matching the font style you wish it to inherit.
+
+  <header paper-font="display2">Hey there!</header>
+
+Note that these are English/Latin centric styles. You may need to further adjust
+line heights and weights for CJK typesetting. See the notes in the Material
+Design typography section.
+-->
+<style>
+
+[paper-font] {
+  font-family: 'Roboto', 'Noto', sans-serif;
+  -webkit-font-smoothing: antialiased;  /* OS X subpixel AA bleed bug */
+}
+
+/* Opt for better kerning for headers & other short labels. */
+[paper-font=display4],
+[paper-font=display3],
+[paper-font=display2],
+[paper-font=display1],
+[paper-font=headline],
+[paper-font=title],
+[paper-font=subhead],
+[paper-font=menu],
+[paper-font=button] {
+  text-rendering: optimizeLegibility;
+}
+
+/*
+"Line wrapping only applies to Body, Subhead, Headline, and the smaller Display
+styles. All other styles should exist as single lines."
+*/
+[paper-font=display4],
+[paper-font=display3],
+[paper-font=title],
+[paper-font=caption],
+[paper-font=menu],
+[paper-font=button] {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+[paper-font=display4] {
+  font-size: 112px;
+  font-weight: 300;
+  letter-spacing: -.044em;
+  line-height: 120px;
+}
+
+[paper-font=display3] {
+  font-size: 56px;
+  font-weight: 400;
+  letter-spacing: -.026em;
+  line-height: 60px;
+}
+
+[paper-font=display2] {
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: -.018em;
+  line-height: 48px;
+}
+
+[paper-font=display1] {
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  line-height: 40px;
+}
+
+[paper-font=headline] {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -.012em;
+  line-height: 32px;
+}
+
+[paper-font=title] {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+[paper-font=subhead] {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+[paper-font=body2] {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+[paper-font=body1] {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+[paper-font=caption] {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.011em;
+  line-height: 20px;
+}
+
+[paper-font=menu] {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+[paper-font=button] {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.018em;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+</style>
+
+
+
+<!--
+A set of base styles that are applied to the document and standard elements that
+match the Material Design spec.
+-->
+<style>
+/*
+Note that there is a lot of style duplication here. The hope is that the Polymer
+0.8 styling solution will allow for inheritance of properties so that we can
+eventually avoid it.
+*/
+
+/* Mixins */
+
+/* [paper-font] */
+body {
+  font-family: 'Roboto', 'Noto', sans-serif;
+  -webkit-font-smoothing: antialiased;  /* OS X subpixel AA bleed bug */
+}
+
+/* [paper-font=display2] */
+h1 {
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: -.018em;
+  line-height: 48px;
+}
+
+/* [paper-font=display1] */
+h2 {
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  line-height: 40px;
+}
+
+/* [paper-font=headline] */
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -.012em;
+  line-height: 32px;
+}
+
+/* [paper-font=subhead] */
+h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* [paper-font=body2] */
+h5, h6 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+/* [paper-font=button] */
+a {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.018em;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+/* Overrides */
+
+body, a {
+  color: #212121;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0 0 20px 0;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+}
+
+</style>
+
+
+    <style>
+      .redlines {
+        background: linear-gradient(0deg, transparent, transparent 3.5px, rgba(255,0,0,0.2) 3.5px, rgba(255,0,0,0.2) 4px);
+        background-size: 100% 4px;
+      }
+      .paragraph {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>paper-styles</h1>
+
+    <section id="typography">
+      <h2>typography.html</h2>
+      <p>
+        Grumpy wizards make toxic brew for the evil Queen and Jack.
+      </p>
+      <section class="redlines paragraph">
+        <div paper-font="display4">Display 4</div>
+        <div paper-font="display3">Display 3</div>
+        <div paper-font="display2">Display 2</div>
+        <div paper-font="display1">Display 1</div>
+        <div paper-font="headline">Headline</div>
+        <div paper-font="title">Title</div>
+        <div paper-font="subhead">Subhead</div>
+        <div paper-font="body2">Body 2</div>
+        <div paper-font="body1">Body 1</div>
+        <div paper-font="caption">Caption</div>
+        <div paper-font="menu">Menu</div>
+        <div paper-font="button">Button</div>
+      </section>
+
+      <h3>Paragraphs</h3>
+
+      <h4>body2</h4>
+      <section paper-font="body2" class="redlines">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+          tincidunt dui sit amet mi auctor, ac gravida magna aliquam. Fusce quis
+          purus elementum, tempus nisi vel, volutpat nulla. Vestibulum mollis
+          dictum tellus, vulputate porttitor arcu. Curabitur imperdiet risus id
+          egestas accumsan. Donec lectus felis, dignissim id iaculis sit amet,
+          faucibus in leo.
+        </p>
+        <p>
+          Mauris id urna ac ante ultrices commodo a imperdiet elit. Vivamus
+          interdum neque magna, eget dapibus est auctor et. Donec accumsan
+          libero nec augue scelerisque, ac egestas ante tincidunt. Proin
+          sollicitudin, mi eget sagittis mollis, arcu orci scelerisque turpis, a
+          sollicitudin tellus quam non sapien.
+        </p>
+      </section>
+
+      <h4>body1</h4>
+      <section paper-font="body1" class="redlines">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+          tincidunt dui sit amet mi auctor, ac gravida magna aliquam. Fusce quis
+          purus elementum, tempus nisi vel, volutpat nulla. Vestibulum mollis
+          dictum tellus, vulputate porttitor arcu. Curabitur imperdiet risus id
+          egestas accumsan. Donec lectus felis, dignissim id iaculis sit amet,
+          faucibus in leo.
+        </p>
+        <p>
+          Mauris id urna ac ante ultrices commodo a imperdiet elit. Vivamus
+          interdum neque magna, eget dapibus est auctor et. Donec accumsan
+          libero nec augue scelerisque, ac egestas ante tincidunt. Proin
+          sollicitudin, mi eget sagittis mollis, arcu orci scelerisque turpis, a
+          sollicitudin tellus quam non sapien.
+        </p>
+      </section>
+    </section>
+
+
+    <section id="global">
+      <h2>global.html</h2>
+
+      <section class="redlines">
+        <h1>Heading Level 1 &lt;h1&gt;</h1>
+        <h2>Heading Level 2 &lt;h2&gt;</h2>
+        <h3>Heading Level 3 &lt;h3&gt;</h3>
+        <h4>Heading Level 4 &lt;h4&gt;</h4>
+        <h5>Heading Level 5 &lt;h5&gt;</h5>
+        <h6>Heading Level 6 &lt;h6&gt;</h6>
+        <a href="#global">Anchor &lt;a&gt;</a>
+      </section>
+  
+
+</section></body></html>
