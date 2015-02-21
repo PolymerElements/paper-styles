@@ -16,9 +16,9 @@
   "homepage": "https://github.com/PolymerLabs/paper-styles/",
   "ignore": [
     "/.*",
-    "/demo/",
+    "/demo/"
   ],
   "dependencies": {
-    "font-roboto": "Polymer/font-roboto",
+    "font-roboto": "Polymer/font-roboto"
   }
 }
