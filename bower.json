@@ -17,8 +17,5 @@
   "ignore": [
     "/.*",
     "/demo/"
-  ],
-  "dependencies": {
-    "font-roboto": "Polymer/font-roboto"
-  }
+  ]
 }
