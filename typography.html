@@ -9,7 +9,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 <!-- TODO(nevir): Should we upgrade Polymer/font-roboto to the final font? -->
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic">
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:600">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Inconsolata:400,700">
 
 <!--
 Typographic styles are provided matching the Material Design standard styles:
@@ -39,6 +39,12 @@ Design typography section.
 .paper-font-menu,
 .paper-font-button {
   font-family: 'Roboto', 'Noto', sans-serif;
+  -webkit-font-smoothing: antialiased;  /* OS X subpixel AA bleed bug */
+}
+
+.paper-font-code2,
+.paper-font-code1 {
+  font-family: 'Inconsolata', 'Consolas', 'Source Code Pro', 'Monaco', 'Menlo', monospace;
   -webkit-font-smoothing: antialiased;  /* OS X subpixel AA bleed bug */
 }
 
@@ -150,12 +156,16 @@ styles. All other styles should exist as single lines."
   text-transform: uppercase;
 }
 
-.paper-font-code {
-  font-family: 'Source Code Pro', 'Consolas', 'Monaco', 'Menlo', monospace;
+.paper-font-code2 {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 20px;
-  -webkit-font-smoothing: antialiased;  /* OS X subpixel AA bleed bug */
+}
+
+.paper-font-code1 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
 }
 
 </style>
