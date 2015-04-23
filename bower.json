@@ -1,6 +1,6 @@
 {
   "name": "paper-styles",
-  "version": "0.8.4",
+  "version": "0.8.6",
   "authors": [
     "Ian MacLeod <imac@google.com>",
     "The Polymer Authors"
@@ -19,6 +19,6 @@
     "/demo/"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#v0.8.0-rc.6"
+    "polymer": "Polymer/polymer#v0.8.0-rc.7"
   }
 }
