@@ -146,6 +146,38 @@
           mixin(--paper-font-display1);
         }
 
+        .shadow {
+          display: inline-block;
+          padding: 8px;
+          margin: 16px;
+          height: 50px;
+          width: 50px;
+        }
+
+        .shadow-2dp {
+          mixin(--shadow-elevation-2dp);
+        }
+
+        .shadow-3dp {
+          mixin(--shadow-elevation-3dp);
+        }
+
+        .shadow-4dp {
+          mixin(--shadow-elevation-4dp);
+        }
+
+        .shadow-6dp {
+          mixin(--shadow-elevation-6dp);
+        }
+
+        .shadow-8dp {
+          mixin(--shadow-elevation-8dp);
+        }
+
+        .shadow-16dp {
+          mixin(--shadow-elevation-16dp);
+        }
+
       </style>
 
       <template>
@@ -231,12 +263,21 @@
           </section>
         </section>
 
+        <section id="shadow">
+          <h2>shadow.html</h2>
+          <div class="shadow shadow-2dp">2dp</div>
+          <div class="shadow shadow-3dp">3dp</div>
+          <div class="shadow shadow-4dp">4dp</div>
+          <div class="shadow shadow-6dp">6dp</div>
+          <div class="shadow shadow-8dp">8dp</div>
+          <div class="shadow shadow-16dp">16dp</div>
+        </section>
+
       </template>
     </dom-module>
 
     <script>
       document.addEventListener('HTMLImportsLoaded', function() {
-        console.log('asdasd');
         Polymer({
           is: 'x-demo',
           enableCustomStyleProperties: true
