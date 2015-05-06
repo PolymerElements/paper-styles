@@ -12,7 +12,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <link rel="import" href="../polymer/polymer.html">
 
-<style is="x-style">
+<style is="custom-style">
 
   * {
 
@@ -46,12 +46,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     /* Material Font Styles */
 
     --paper-font-display4: {
-      /* mixin(--paper-font-common-base) */
+      /* @apply(--paper-font-common-base) */
       font-family: 'Roboto', 'Noto', sans-serif;
       -webkit-font-smoothing: antialiased;
-      /* mixin(--paper-font-common-expensive-kerning); */
+      /* @apply(--paper-font-common-expensive-kerning); */
       text-rendering: optimizeLegibility;
-      /* mixin(--paper-font-common-nowrap); */
+      /* @apply(--paper-font-common-nowrap); */
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -63,12 +63,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     --paper-font-display3: {
-      /* mixin(--paper-font-common-base) */
+      /* @apply(--paper-font-common-base) */
       font-family: 'Roboto', 'Noto', sans-serif;
       -webkit-font-smoothing: antialiased;
-      /* mixin(--paper-font-common-expensive-kerning); */
+      /* @apply(--paper-font-common-expensive-kerning); */
       text-rendering: optimizeLegibility;
-      /* mixin(--paper-font-common-nowrap); */
+      /* @apply(--paper-font-common-nowrap); */
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -80,10 +80,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     --paper-font-display2: {
-      /* mixin(--paper-font-common-base) */
+      /* @apply(--paper-font-common-base) */
       font-family: 'Roboto', 'Noto', sans-serif;
       -webkit-font-smoothing: antialiased;
-      /* mixin(--paper-font-common-expensive-kerning); */
+      /* @apply(--paper-font-common-expensive-kerning); */
       text-rendering: optimizeLegibility;
 
       font-size: 45px;
@@ -93,10 +93,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     --paper-font-display1: {
-      /* mixin(--paper-font-common-base) */
+      /* @apply(--paper-font-common-base) */
       font-family: 'Roboto', 'Noto', sans-serif;
       -webkit-font-smoothing: antialiased;
-      /* mixin(--paper-font-common-expensive-kerning); */
+      /* @apply(--paper-font-common-expensive-kerning); */
       text-rendering: optimizeLegibility;
 
       font-size: 34px;
@@ -106,10 +106,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     --paper-font-headline: {
-      /* mixin(--paper-font-common-base) */
+      /* @apply(--paper-font-common-base) */
       font-family: 'Roboto', 'Noto', sans-serif;
       -webkit-font-smoothing: antialiased;
-      /* mixin(--paper-font-common-expensive-kerning); */
+      /* @apply(--paper-font-common-expensive-kerning); */
       text-rendering: optimizeLegibility;
 
       font-size: 24px;
@@ -119,12 +119,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     --paper-font-title: {
-      /* mixin(--paper-font-common-base) */
+      /* @apply(--paper-font-common-base) */
       font-family: 'Roboto', 'Noto', sans-serif;
       -webkit-font-smoothing: antialiased;
-      /* mixin(--paper-font-common-expensive-kerning); */
+      /* @apply(--paper-font-common-expensive-kerning); */
       text-rendering: optimizeLegibility;
-      /* mixin(--paper-font-common-nowrap); */
+      /* @apply(--paper-font-common-nowrap); */
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -135,10 +135,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     --paper-font-subhead: {
-      /* mixin(--paper-font-common-base) */
+      /* @apply(--paper-font-common-base) */
       font-family: 'Roboto', 'Noto', sans-serif;
       -webkit-font-smoothing: antialiased;
-      /* mixin(--paper-font-common-expensive-kerning); */
+      /* @apply(--paper-font-common-expensive-kerning); */
       text-rendering: optimizeLegibility;
 
       font-size: 16px;
@@ -147,7 +147,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     --paper-font-body2: {
-      /* mixin(--paper-font-common-base) */
+      /* @apply(--paper-font-common-base) */
       font-family: 'Roboto', 'Noto', sans-serif;
       -webkit-font-smoothing: antialiased;
 
@@ -157,7 +157,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     --paper-font-body1: {
-      /* mixin(--paper-font-common-base) */
+      /* @apply(--paper-font-common-base) */
       font-family: 'Roboto', 'Noto', sans-serif;
       -webkit-font-smoothing: antialiased;
 
@@ -167,10 +167,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     --paper-font-caption: {
-      /* mixin(--paper-font-common-base) */
+      /* @apply(--paper-font-common-base) */
       font-family: 'Roboto', 'Noto', sans-serif;
       -webkit-font-smoothing: antialiased;
-      /* mixin(--paper-font-common-nowrap); */
+      /* @apply(--paper-font-common-nowrap); */
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -182,12 +182,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     --paper-font-menu: {
-      /* mixin(--paper-font-common-base) */
+      /* @apply(--paper-font-common-base) */
       font-family: 'Roboto', 'Noto', sans-serif;
       -webkit-font-smoothing: antialiased;
-      /* mixin(--paper-font-common-expensive-kerning); */
+      /* @apply(--paper-font-common-expensive-kerning); */
       text-rendering: optimizeLegibility;
-      /* mixin(--paper-font-common-nowrap); */
+      /* @apply(--paper-font-common-nowrap); */
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -198,12 +198,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     --paper-font-button: {
-      /* mixin(--paper-font-common-base) */
+      /* @apply(--paper-font-common-base) */
       font-family: 'Roboto', 'Noto', sans-serif;
       -webkit-font-smoothing: antialiased;
-      /* mixin(--paper-font-common-expensive-kerning); */
+      /* @apply(--paper-font-common-expensive-kerning); */
       text-rendering: optimizeLegibility;
-      /* mixin(--paper-font-common-nowrap); */
+      /* @apply(--paper-font-common-nowrap); */
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -216,7 +216,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     --paper-font-code2: {
-      /* mixin(--paper-font-common-code); */
+      /* @apply(--paper-font-common-code); */
       font-family: 'Inconsolata', 'Consolas', 'Source Code Pro', 'Monaco', 'Menlo', monospace;
       -webkit-font-smoothing: antialiased;
 
@@ -226,7 +226,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     --paper-font-code1: {
-      /* mixin(--paper-font-common-code); */
+      /* @apply(--paper-font-common-code); */
       font-family: 'Inconsolata', 'Consolas', 'Source Code Pro', 'Monaco', 'Menlo', monospace;
       -webkit-font-smoothing: antialiased;
 
