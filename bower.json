@@ -1,11 +1,10 @@
 {
   "name": "paper-styles",
-  "version": "0.9.2",
-  "description": "Material design css styles",
+  "version": "0.9.3",
+  "description": "Common (global) styles for Material Design elements.",
   "authors": [
     "The Polymer Authors"
   ],
-  "description": "Common (global) styles for Material Design elements.",
   "keywords": [
     "web-component",
     "web-components",
