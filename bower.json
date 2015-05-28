@@ -11,7 +11,7 @@
     "style"
   ],
   "main": "paper-styles.html",
-  "license": "MIT",
+  "license": "http://polymer.github.io/LICENSE.txt",
   "homepage": "https://github.com/polymerelements/paper-styles/",
   "ignore": [
     "/.*",
