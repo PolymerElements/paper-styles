@@ -18,8 +18,7 @@
   "license": "http://polymer.github.io/LICENSE.txt",
   "homepage": "https://github.com/polymerelements/paper-styles/",
   "ignore": [
-    "/.*",
-    "/demo/"
+    "/.*"
   ],
   "dependencies": {
     "iron-flex-layout": "polymerelements/iron-flex-layout#^1.0.0",
