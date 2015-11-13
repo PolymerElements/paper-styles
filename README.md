@@ -2,7 +2,7 @@
 <!---
 
 This README is automatically generated from the comments in these files:
-color.html  default-theme.html  paper-styles-classes.html  paper-styles.html  shadow.html  typography.html
+paper-styles.html
 
 Edit those files, and our readme bot will duplicate them over here!
 Edit this file, and the bot will squash your changes :)
