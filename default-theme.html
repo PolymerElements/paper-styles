@@ -49,24 +49,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     /*
      * Deprecated values because of their confusing names.
      */
-
-    /* Use --light-theme-text-color instead */
-    --primary-text-color: #212121;
-
-    /* Use --dark-theme-text-color instead */
-    --text-primary-color: #ffffff;
-
-    /* Use --light-theme-background-color instead */
-    --primary-background-color: #ffffff;
-
-    /* Use --light-theme-secondary-color */
-    --secondary-text-color: #757575;
-
-    /* Use --light-theme-disabled-color instead */
-    --disabled-text-color: #bdbdbd;
-
-    /* Use --light-theme-divider-color instead */
-    --divider-color: #e0e0e0;
+    --primary-text-color: var(--light-theme-text-color);
+    --text-primary-color: var(--dark-theme-text-color);
+    --primary-background-color: var(--light-theme-background-color);
+    --secondary-text-color: var(--light-theme-secondary-color);
+    --disabled-text-color:var(--light-theme-disabled-color);
+    --divider-color: var(--light-theme-divider-color);
   }
 
 </style>
