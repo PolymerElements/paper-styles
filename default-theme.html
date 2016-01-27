@@ -9,6 +9,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="color.html">
 
 <!-- Taken from https://www.google.com/design/spec/style/color.html#color-ui-color-application -->
 
@@ -43,20 +44,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
      */
     --light-theme-background-color: #ffffff;
     --light-theme-base-color: #000000;
-    --light-theme-text-color: #212121;
-    --light-theme-secondary-color: #737373;  /* for secondary text and icons */
-    --light-theme-disabled-color: #9b9b9b;  /* disabled/hint text */
-    --light-theme-divider-color: #dbdbdb;
+    --light-theme-text-color: rgba(0, 0, 0, --dark-primary-opacity);
+    --light-theme-secondary-color: rgba(0, 0, 0, --dark-secondary-opacity);  /* for secondary text and icons */
+    --light-theme-disabled-color: rgba(0, 0, 0, --dark-disabled-opacity);  /* disabled/hint text */
+    --light-theme-divider-color: rgba(0, 0, 0, --dark-divider-opacity);
 
     /*
      * Material Design Dark background theme
      */
     --dark-theme-background-color: #212121;
     --dark-theme-base-color: #ffffff;
-    --dark-theme-text-color: #ffffff;
-    --dark-theme-secondary-color: #bcbcbc;  /* for secondary text and icons */
-    --dark-theme-disabled-color: #646464;  /* disabled/hint text */
-    --dark-theme-divider-color: #3c3c3c;
+    --dark-theme-text-color: rgba(255, 255, 255, --light-primary-opacity);
+    --dark-theme-secondary-color: rgba(255, 255, 255, --light-secondary-opacity);  /* for secondary text and icons */
+    --dark-theme-disabled-color: rgba(255, 255, 255, --light-disabled-opacity);  /* disabled/hint text */
+    --dark-theme-divider-color: rgba(255, 255, 255, --light-divider-opacity);
 
     /*
      * Deprecated values because of their confusing names.
