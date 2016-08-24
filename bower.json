@@ -21,13 +21,13 @@
     "/.*"
   ],
   "dependencies": {
-    "iron-flex-layout": "PolymerElements/iron-flex-layout#^1.0.0",
+    "iron-flex-layout": "notwaldorf/iron-flex-layout#2.0-preview",
     "font-roboto": "PolymerElements/font-roboto#^1.0.1",
-    "polymer": "Polymer/polymer#^1.0.0"
+    "polymer": "https://github.com/PolymerLabs/alacarte.git#master"
   },
   "devDependencies": {
-    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0",
-    "iron-component-page": "polymerelements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "notwaldorf/iron-demo-helpers#2.0-preview",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#v1-polymer-edits",
     "web-component-tester": "^4.0.0"
   }
 }
