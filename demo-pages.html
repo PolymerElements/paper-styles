@@ -11,15 +11,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../polymer/polymer.html">
 
 <link rel="import" href="../iron-flex-layout/iron-flex-layout.html">
-
 <link rel="import" href="color.html">
 <link rel="import" href="typography.html">
 <link rel="import" href="shadow.html">
 
+<!--
+Note that this file probably doesn't do what you expect it to do. It's not
+a `<style is=custom-style include="..."` type of style include, which mean
+these styles will only apply to the main document, regardless of where
+you import this file.
+
+For a set of styles that can be applied to an element,
+check iron-demo-helpers/demo-pages-shared-styles.html.
+-->
 <style is="custom-style">
 
   body {
-    @apply(--paper-font-common-base);
+    @apply --paper-font-common-base;
     font-size: 14px;
     margin: 0;
     padding: 24px;
@@ -27,14 +35,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   }
 
   .horizontal-section-container {
-    @apply(--layout-horizontal);
-    @apply(--layout-center-justified);
-    @apply(--layout-wrap);
+    @apply --layout-horizontal;
+    @apply --layout-center-justified;
+    @apply --layout-wrap;
   }
 
   .vertical-section-container {
-    @apply(--layout-vertical);
-    @apply(--center-justified);
+    @apply --layout-vertical;
+    @apply --center-justified;
   }
 
   .horizontal-section {
@@ -43,7 +51,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     margin-right: 24px;
     min-width: 200px;
 
-    @apply(--shadow-elevation-2dp);
+    @apply --shadow-elevation-2dp;
   }
 
   .vertical-section {
@@ -51,7 +59,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     padding: 24px;
     margin: 0 24px 24px 24px;
 
-    @apply(--shadow-elevation-2dp);
+    @apply --shadow-elevation-2dp;
   }
 
   .centered {
@@ -66,7 +74,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   /* TODO: remove this hack and use horizontal-section-container instead */
   body > div.layout.horizontal.center-justified {
-    @apply(--layout-wrap);
+    @apply --layout-wrap;
   }
 
 </style>
