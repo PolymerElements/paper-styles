@@ -21,12 +21,12 @@
     "/.*"
   ],
   "dependencies": {
-    "iron-flex-layout": "notwaldorf/iron-flex-layout#2.0-preview",
+    "iron-flex-layout": "https://github.com/notwaldorf/iron-flex-layout.git#2.0-preview",
     "font-roboto": "PolymerElements/font-roboto#^1.0.1",
     "polymer": "https://github.com/PolymerLabs/alacarte.git#master"
   },
   "devDependencies": {
-    "iron-demo-helpers": "notwaldorf/iron-demo-helpers#2.0-preview",
+    "iron-demo-helpers": "https://github.com/notwaldorf/iron-demo-helpers.git#2.0-preview",
     "webcomponentsjs": "webcomponents/webcomponentsjs#v1-polymer-edits",
     "web-component-tester": "^4.0.0"
   }
