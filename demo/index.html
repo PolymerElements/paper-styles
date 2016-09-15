@@ -28,12 +28,14 @@
     <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
   </head>
 
-  <custom-style><style is="custom-style" include="demo-pages-shared-styles">
-    .redlines {
-      background: linear-gradient(0deg, transparent, transparent 3.5px, rgba(255,0,0,0.2) 3.5px, rgba(255,0,0,0.2) 4px);
-      background-size: 100% 4px;
-    }
-  </style></custom-style>
+  <custom-style>
+    <style is="custom-style" include="demo-pages-shared-styles">
+      .redlines {
+        background: linear-gradient(0deg, transparent, transparent 3.5px, rgba(255,0,0,0.2) 3.5px, rgba(255,0,0,0.2) 4px);
+        background-size: 100% 4px;
+      }
+    </style>
+  </custom-style>
 
   <body unresolved>
     <div class="vertical-section-container centered">
@@ -72,20 +74,22 @@
             sollicitudin tellus quam non sapien.
           </p>
 
-          <custom-style><style is="custom-style">
-            .paper-font-display4 { @apply --paper-font-display4; }
-            .paper-font-display3 { @apply --paper-font-display3; }
-            .paper-font-display2 { @apply --paper-font-display2; }
-            .paper-font-display1 { @apply --paper-font-display1; }
-            .paper-font-headline { @apply --paper-font-headline; }
-            .paper-font-title { @apply --paper-font-title; }
-            .paper-font-subhead {  @apply --paper-font-subhead; }
-            .paper-font-body2 { @apply --paper-font-body2; }
-            .paper-font-body1 { @apply --paper-font-body1; }
-            .paper-font-caption { @apply --paper-font-caption; }
-            .paper-font-menu { @apply --paper-font-menu; }
-            .paper-font-button { @apply --paper-font-button; }
-          </style></custom-style>
+          <custom-style>
+            <style is="custom-style">
+              .paper-font-display4 { @apply --paper-font-display4; }
+              .paper-font-display3 { @apply --paper-font-display3; }
+              .paper-font-display2 { @apply --paper-font-display2; }
+              .paper-font-display1 { @apply --paper-font-display1; }
+              .paper-font-headline { @apply --paper-font-headline; }
+              .paper-font-title { @apply --paper-font-title; }
+              .paper-font-subhead {  @apply --paper-font-subhead; }
+              .paper-font-body2 { @apply --paper-font-body2; }
+              .paper-font-body1 { @apply --paper-font-body1; }
+              .paper-font-caption { @apply --paper-font-caption; }
+              .paper-font-menu { @apply --paper-font-menu; }
+              .paper-font-button { @apply --paper-font-button; }
+            </style>
+          </custom-style>
         </template>
       </demo-snippet>
 
@@ -100,22 +104,24 @@
           <div class="shadow shadow-12dp">12dp</div>
           <div class="shadow shadow-16dp">16dp</div>
 
-          <custom-style><style is="custom-style">
-            .shadow-2dp { @apply --shadow-elevation-2dp; }
-            .shadow-3dp { @apply --shadow-elevation-3dp; }
-            .shadow-4dp { @apply --shadow-elevation-4dp; }
-            .shadow-6dp { @apply --shadow-elevation-6dp; }
-            .shadow-8dp { @apply --shadow-elevation-8dp; }
-            .shadow-12dp { @apply --shadow-elevation-12dp; }
-            .shadow-16dp { @apply --shadow-elevation-16dp; }
-            .shadow {
-              display: inline-block;
-              padding: 8px;
-              margin: 16px;
-              height: 50px;
-              width: 50px;
-            }
-          </style></custom-style>
+          <custom-style>
+            <style is="custom-style">
+              .shadow-2dp { @apply --shadow-elevation-2dp; }
+              .shadow-3dp { @apply --shadow-elevation-3dp; }
+              .shadow-4dp { @apply --shadow-elevation-4dp; }
+              .shadow-6dp { @apply --shadow-elevation-6dp; }
+              .shadow-8dp { @apply --shadow-elevation-8dp; }
+              .shadow-12dp { @apply --shadow-elevation-12dp; }
+              .shadow-16dp { @apply --shadow-elevation-16dp; }
+              .shadow {
+                display: inline-block;
+                padding: 8px;
+                margin: 16px;
+                height: 50px;
+                width: 50px;
+              }
+            </style>
+          </custom-style>
         </template>
       </demo-snippet>
 
@@ -132,56 +138,58 @@
             <div class="disabled-item">Disabled</div>
           </div>
 
-          <custom-style><style is="custom-style">
-            .toolbar {
-              height: 144px;
-              padding: 16px;
-              background: var(--default-primary-color);
-              color: var(--text-primary-color);
-              @apply --paper-font-display1;
-            }
+          <custom-style>
+            <style is="custom-style">
+              .toolbar {
+                height: 144px;
+                padding: 16px;
+                background: var(--default-primary-color);
+                color: var(--text-primary-color);
+                @apply --paper-font-display1;
+              }
 
-            .item, .disabled-item {
-              position: relative;
-              padding: 8px;
-              border: 1px solid;
-              border-color: var(--divider-color);
-              border-top: 0;
-            }
+              .item, .disabled-item {
+                position: relative;
+                padding: 8px;
+                border: 1px solid;
+                border-color: var(--divider-color);
+                border-top: 0;
+              }
 
-            .item .primary {
-              color: var(--primary-text-color);
-              @apply --paper-font-body2;
-            }
+              .item .primary {
+                color: var(--primary-text-color);
+                @apply --paper-font-body2;
+              }
 
-            .item .secondary {
-              color: var(--secondary-text-color);
-              @apply --paper-font-body1;
-            }
+              .item .secondary {
+                color: var(--secondary-text-color);
+                @apply --paper-font-body1;
+              }
 
-            .disabled-item {
-              color: var(--disabled-text-color);
-              @apply --paper-font-body2;
-            }
+              .disabled-item {
+                color: var(--disabled-text-color);
+                @apply --paper-font-body2;
+              }
 
-            .fab {
-              position: absolute;
-              box-sizing: border-box;
-              padding: 8px;
-              width: 56px;
-              height: 56px;
-              right: 16px;
-              top: -28px;
-              border-radius: 50%;
-              text-align: center;
+              .fab {
+                position: absolute;
+                box-sizing: border-box;
+                padding: 8px;
+                width: 56px;
+                height: 56px;
+                right: 16px;
+                top: -28px;
+                border-radius: 50%;
+                text-align: center;
 
-              background: var(--accent-color);
-              color: var(--text-primary-color);
-              @apply --paper-font-display1;
-            }
-          </style></custom-style>
+                background: var(--accent-color);
+                color: var(--text-primary-color);
+                @apply --paper-font-display1;
+              }
+            </style>
+          </custom-style>
         </template>
       </demo-snippet>
-
+    </div>
   </body>
 </html>
