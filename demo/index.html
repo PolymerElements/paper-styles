@@ -24,6 +24,8 @@
     <link rel="import" href="../shadow.html">
     <link rel="import" href="../typography.html">
     <link rel="import" href="../default-theme.html">
+    <link rel="import" href="../element-styles/paper-item.html">
+    <link rel="import" href="../element-styles/paper-material.html">
     <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
     <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
   </head>
@@ -190,6 +192,41 @@
           </custom-style>
         </template>
       </demo-snippet>
+
+      <h4>Element shared styles: paper-material</h4>
+      <demo-snippet>
+        <template>
+          <custom-style>
+            <style is="custom-style" include="paper-material">
+              .paper-material {
+                padding: 16px;
+                margin: 0 16px;
+                display: inline-block;
+              }
+            </style>
+          </custom-style>
+
+          <div class="paper-material" elevation="1">1</div>
+          <div class="paper-material" elevation="2">2</div>
+          <div class="paper-material" elevation="3">3</div>
+          <div class="paper-material" elevation="4">4</div>
+          <div class="paper-material" elevation="5">5</div>
+        </template>
+      </demo-snippet>
+
+      <h4>Element shared styles: paper-item</h4>
+      <demo-snippet>
+        <template>
+          <custom-style>
+            <style is="custom-style" include="paper-item"></style>
+          </custom-style>
+
+          <button class="paper-item" role="option">Inbox</button>
+          <button class="paper-item" role="option">Starred</button>
+          <button class="paper-item" role="option">Sent mail</button>
+        </template>
+      </demo-snippet>
+
     </div>
   </body>
 </html>
