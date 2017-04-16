@@ -1,6 +1,6 @@
 <!--
 @license
-Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
 This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
 The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
 The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
@@ -35,17 +35,23 @@ Shared styles for a native `button` to be used as an item in a `paper-listbox` e
 <dom-module id="paper-item">
   <template>
     <style>
+      :host, html {
+        --paper-item: {
+          display: block;
+          position: relative;
+          min-height: var(--paper-item-min-height, 48px);
+          padding: 0px 16px;
+          @apply --paper-font-subhead;
+          border:none;
+          outline: none;
+          background: white;
+          width: 100%;
+          text-align: left;
+        };
+      }
+
       .paper-item {
-        display: block;
-        position: relative;
-        min-height: var(--paper-item-min-height, 48px);
-        padding: 0px 16px;
-        @apply --paper-font-subhead;
-        border:none;
-        outline: none;
-        background: white;
-        width: 100%;
-        text-align: left;
+        @apply --paper-item;
       }
 
       .paper-item[hidden] {
@@ -58,7 +64,7 @@ Shared styles for a native `button` to be used as an item in a `paper-listbox` e
       }
 
       .paper-item[disabled] {
-        color: var(--paper-item-disabled-color, --disabled-text-color);
+        color: var(--paper-item-disabled-color, var(--disabled-text-color));
         @apply --paper-item-disabled;
       }
 
