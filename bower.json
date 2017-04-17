@@ -14,7 +14,13 @@
     "type": "git",
     "url": "git://github.com/PolymerElements/paper-styles.git"
   },
-  "main": "paper-styles.html",
+  "main": [
+  	"paper-styles.html",
+  	"color.html",
+  	"default-theme.html",
+  	"shadow.html",
+  	"typography.html"
+  ],
   "license": "http://polymer.github.io/LICENSE.txt",
   "homepage": "https://github.com/polymerelements/paper-styles/",
   "ignore": [
