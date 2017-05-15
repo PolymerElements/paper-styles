@@ -21,14 +21,14 @@
     "/.*"
   ],
   "dependencies": {
-    "iron-flex-layout": "PolymerElements/iron-flex-layout#2.0-preview",
+    "iron-flex-layout": "PolymerElements/iron-flex-layout#1 - 2",
     "font-roboto": "PolymerElements/font-roboto#^1.0.1",
-    "polymer": "Polymer/polymer#^2.0.0-rc.1"
+    "polymer": "Polymer/polymer#1.9 - 2"
   },
   "devDependencies": {
-    "iron-component-page": "PolymerElements/iron-component-page#2.0-preview",
-    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#2.0-preview",
-    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0-rc.1",
+    "iron-component-page": "PolymerElements/iron-component-page#1 - 2",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#1 - 2",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0",
     "web-component-tester": "^6.0.0-prerelease.6"
   },
   "variants": {
@@ -36,7 +36,7 @@
       "dependencies": {
         "iron-flex-layout": "PolymerElements/iron-flex-layout#^1.0.0",
         "font-roboto": "PolymerElements/font-roboto#^1.0.0",
-        "polymer": "Polymer/polymer#^1.1.0"
+        "polymer": "Polymer/polymer#^1.9"
       },
       "devDependencies": {
         "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
@@ -45,5 +45,8 @@
         "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
       }
     }
+  },
+  "resolutions": {
+    "webcomponentsjs": "^1.0.0"
   }
 }
