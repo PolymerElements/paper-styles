@@ -1,0 +1,10 @@
+{
+  "name": "@polymer/paper-styles",
+  "private": true,
+  "description": "Common (global) styles for Material Design elements.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/PolymerElements/paper-styles.git"
+  },
+  "license": "http://polymer.github.io/LICENSE.txt"
+}
