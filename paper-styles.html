@@ -30,6 +30,20 @@ used in the PolymerElements demo pages
 We recommend importing each of these individual files, and using the style mixins
 available in each ones, rather than the aggregated `paper-styles.html` as a whole.
 
+Create your own global theme to override components that use paper-styles by creating a component file as follows and 
+then import it into your index.html or app component using html imports like you do with other web components.
+```
+<link rel="import" href="bower_components/polymer/lib/elements/custom-style.html">
+<custom-style>
+  <style is="custom-style">
+    html {
+      --primary-color: var(--paper-green-500);
+      --accent-color: var(--paper-deep-orange-500);
+    }
+  </style>
+</custom-style>
+```
+
 @group Paper Elements
 @pseudoElement paper-styles
 @demo demo/index.html
