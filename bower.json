@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git://github.com/PolymerElements/paper-styles.git"
   },
-  "main": ["paper-styles.html", "demo-pages.html", "element-styles/paper-material-styles.html"],
+  "main": ["paper-styles.html", "demo-pages.html", "element-styles/paper-material-styles.html", "classes/global.html"],
   "license": "http://polymer.github.io/LICENSE.txt",
   "homepage": "https://github.com/polymerelements/paper-styles/",
   "ignore": [
