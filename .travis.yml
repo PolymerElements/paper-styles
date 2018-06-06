@@ -1,10 +1,8 @@
 language: node_js
-sudo: required
+sudo: 'false'
 before_script:
-  - npm install -g bower polymer-cli@next
+  - npm install -g polymer-cli
   - polymer install --variants
-  - sudo mv /usr/bin/google-chrome /usr/bin/google-chrome-old
-  - sudo mv /usr/bin/google-chrome-beta /usr/bin/google-chrome
   - >-
     npm run update-types && git diff --exit-code || (echo -e
     '\n\033[31mERROR:\033[0m Typings are stale. Please run "npm run
@@ -15,21 +13,19 @@ before_script:
 env:
   global:
     - secure: >-
-        n1GTikMyHiZ8pFwPNIo2E26rcJ4qsXsWgoN9QvuhKEOikqZD9XHyLb4tuy1IkFgeAldnbSmX+erfjgM8ZQyrpJD52WjTFV/HFJiEmrMly23HQEPueQ8xykYWIusEOfOjEHyVH4EKM+lidQIw7Ac7BLBPNWxOb85DAeeCorVPN20=
+        qq1hIYlSF0NJnCyGVYaGC/6oaTgirVHsip+EButDUn5KW4rA2OLDYrCzaQ6p7mKHZEOWx+LNA7rGw0O/peaL3y1xXlwS+w2AF/AiCa//OIgqBdjhS7TycL9FVGEHtTmZ05ilR/nWOHAMNCOHnGaTTGvoktjx3c/B/p2XqT8vJ1E=
     - secure: >-
-        X2osrH6z2xoMz1AHz3vsU4LXqZqMZggUfGDLNUZLeXzY7jwearGdRGSdXS+UFvnZ5a1s7QlWQcbOHfbZm9wVfjHRSFkl3nccVZiTz0PQ+hYoDyAPC6f4L6rC+1IabE3B/fbNbjYePfJMKI/Pwuxl8xeS+ZzIGrNWjkPlFV4MZR4=
-node_js: stable
+        kz55kbiwQHILHG/T8G3oLBRcWs0qEQa8hMj9ShyykEGraQj2RXHpvupHSz2V3OmG7x+jlqSdgcFF7iVty/Qq7iybPEGMxHNbgBtLeqt1zPSTRdgdC7hcpcWovulPjonlfNnM1rQBITKggpYj0i5qWOpuS6cmzDxZRXAyfZYcNYI=
+node_js: '9'
 addons:
   firefox: latest
-  apt:
-    sources:
-      - google-chrome
-    packages:
-      - google-chrome-beta
-  sauce_connect: true
+  chrome: stable
 script:
-  - true || xvfb-run polymer test
+  - xvfb-run polymer test
   - >-
-    if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then true || polymer test -s
-    'default'; fi
+    if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then polymer test -s 'default';
+    fi
 dist: trusty
+cache:
+  directories:
+    - node_modules
