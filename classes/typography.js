@@ -1,23 +1,8 @@
-<!--
-@license
-Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
--->
-<link rel="import" href="../../font-roboto/roboto.html">
+import '@polymer/font-roboto/roboto.js';
+const $_documentContainer = document.createElement('template');
+$_documentContainer.setAttribute('style', 'display: none;');
 
-<!--
-Note that this file probably doesn't do what you expect it to do. It's not
-a `<style is=custom-style include="..."` type of style include, which mean
-these styles will only apply to the main document, regardless of where
-you import this file.
-
-For a set of styles that can be applied to an element, check paper-styles/typography.html.
--->
-<style>
+$_documentContainer.innerHTML = `<style>
 
 .paper-font-display4,
 .paper-font-display3,
@@ -41,7 +26,7 @@ For a set of styles that can be applied to an element, check paper-styles/typogr
   -webkit-font-smoothing: antialiased;  /* OS X subpixel AA bleed bug */
 }
 
-/* Opt for better kerning for headers & other short labels. */
+/* Opt for better kerning for headers &amp; other short labels. */
 .paper-font-display4,
 .paper-font-display3,
 .paper-font-display2,
@@ -161,4 +146,30 @@ styles. All other styles should exist as single lines."
   line-height: 20px;
 }
 
-</style>
+</style>`;
+
+document.head.appendChild($_documentContainer.content);
+
+/**
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+*/
+/*
+Note that this file probably doesn't do what you expect it to do. It's not
+a `<style is=custom-style include="..."` type of style include, which mean
+these styles will only apply to the main document, regardless of where
+you import this file.
+
+For a set of styles that can be applied to an element, check paper-styles/typography.html.
+*/
+/*
+  FIXME(polymer-modulizer): the above comments were extracted
+  from HTML and may be out of place here. Review them and
+  then delete this comment!
+*/
+;

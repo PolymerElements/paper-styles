@@ -1,19 +1,42 @@
 {
-  "name": "@polymer/paper-styles",
-  "private": true,
   "description": "Common (global) styles for Material Design elements.",
+  "keywords": [
+    "web-component",
+    "polymer",
+    "style"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/PolymerElements/paper-styles.git"
   },
+  "homepage": "https://github.com/polymerelements/paper-styles/",
+  "name": "@polymer/paper-styles",
   "license": "BSD-3-Clause",
   "devDependencies": {
     "@polymer/gen-typescript-declarations": "^1.2.2",
     "bower": "^1.8.0",
-    "webmat": "^0.2.0"
+    "webmat": "^0.2.0",
+    "@polymer/iron-component-page": "^3.0.0-pre.20",
+    "@polymer/iron-demo-helpers": "^3.0.0-pre.20",
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "wct-browser-legacy": "^1.0.1"
   },
   "scripts": {
     "update-types": "bower install && gen-typescript-declarations --deleteExisting --outDir .",
     "format": "webmat && npm run update-types"
+  },
+  "version": "3.0.0-pre.20",
+  "resolutions": {
+    "inherits": "2.0.3",
+    "samsam": "1.1.3",
+    "supports-color": "3.1.2",
+    "type-detect": "1.0.0",
+    "@webcomponents/webcomponentsjs": "2.0.0-beta.2"
+  },
+  "author": "The Polymer Authors",
+  "dependencies": {
+    "@polymer/iron-flex-layout": "^3.0.0-pre.20",
+    "@polymer/font-roboto": "^3.0.0-pre.20",
+    "@polymer/polymer": "^3.0.0"
   }
 }
