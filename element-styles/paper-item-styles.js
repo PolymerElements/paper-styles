@@ -39,7 +39,22 @@ const template = html`
 <dom-module id="paper-item-styles">
   <template>
     <style>
-      :host, html {
+      html {
+        --paper-item: {
+          display: block;
+          position: relative;
+          min-height: var(--paper-item-min-height, 48px);
+          padding: 0px 16px;
+          @apply --paper-font-subhead;
+          border:none;
+          outline: none;
+          background: white;
+          width: 100%;
+          text-align: left;
+        };
+      }
+      /* Duplicate the style because of https://github.com/webcomponents/shadycss/issues/193 */
+      :host {
         --paper-item: {
           display: block;
           position: relative;
