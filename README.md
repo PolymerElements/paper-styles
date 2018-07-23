@@ -3,19 +3,19 @@
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://webcomponents.org/element/@polymer/paper-styles)
 
 ## &lt;paper-styles&gt;
-1. [default-theme.html](https://github.com/PolymerElements/paper-styles/blob/master/default-theme.html): text,
+1. [default-theme.js](https://github.com/PolymerElements/paper-styles/blob/master/default-theme.html): text,
 background and accent colors that match the default Material Design theme
 
-1. [shadow.html](https://github.com/PolymerElements/paper-styles/blob/master/shadow.html): Material Design
-[elevation](https://www.google.com/design/spec/what-is-material/elevation-shadows.html) and shadow styles
+1. [shadow.js](https://github.com/PolymerElements/paper-styles/blob/master/shadow.html): Material Design
+[elevation](https://material.io/design/environment/light-shadows.html#shadows) and shadow styles
 
-1. [typography.html](https://github.com/PolymerElements/paper-styles/blob/master/typography.html):
+1. [typography.js](https://github.com/PolymerElements/paper-styles/blob/master/typography.html):
 Material Design [font](http://www.google.com/design/spec/style/typography.html#typography-styles) styles and sizes
 
-1. [demo-pages.html](https://github.com/PolymerElements/paper-styles/blob/master/demo-pages.html): generic styles
+1. [demo-pages.js](https://github.com/PolymerElements/paper-styles/blob/master/demo-pages.html): generic styles
 used in the PolymerElements demo pages
 
-1. [color.html](https://github.com/PolymerElements/paper-styles/blob/master/color.html):
+1. [color.js](https://github.com/PolymerElements/paper-styles/blob/master/color.html):
 a complete list of the colors defined in the Material Design [palette](https://www.google.com/design/spec/style/color.html)
 
 We recommend importing each of these individual files, and using the style mixins

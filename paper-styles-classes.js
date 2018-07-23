@@ -15,7 +15,7 @@ these styles will only apply to the main document, regardless of where
 you import this file.
 
 For a set of styles that can be applied to an element,
-check paper-styles.html.
+check paper-styles.js.
 */
 
 import './classes/typography.js';

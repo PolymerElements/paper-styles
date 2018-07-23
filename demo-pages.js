@@ -74,7 +74,7 @@ const template = html`<custom-style>
     }
 
     /* TODO: remove this hack and use horizontal-section-container instead */
-    body &gt; div.layout.horizontal.center-justified {
+    body > div.layout.horizontal.center-justified {
       @apply --layout-wrap;
     }
   </style>

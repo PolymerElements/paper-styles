@@ -33,7 +33,7 @@ const template = html`
       --error-color: var(--paper-deep-orange-a700);
 
       /*
-       * Primary and accent colors. Also see color.html for more colors.
+       * Primary and accent colors. Also see color.js for more colors.
        */
       --primary-color: var(--paper-indigo-500);
       --light-primary-color: var(--paper-indigo-100);
