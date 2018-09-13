@@ -27,7 +27,7 @@
   "version": "3.0.0-pre.26",
   "author": "The Polymer Authors",
   "dependencies": {
-    "@polymer/iron-flex-layout": "^3.0.0-pre.25",
+    "@polymer/iron-flex-layout": "^3.0.0-pre.26",
     "@polymer/font-roboto": "^3.0.1",
     "@polymer/polymer": "^3.0.0"
   }
