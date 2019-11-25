@@ -17,7 +17,7 @@ you import this file.
 For a set of styles that can be applied to an element, check
 paper-styles/typography.html.
 */
-import '@polymer/font-roboto/roboto.js';
+import '@polymer/font-roboto-local/roboto.js';
 import {html} from '@polymer/polymer/lib/utils/html-tag.js';
 const template = html`
 <style>
