@@ -8,5 +8,5 @@
  *   classes/typography.html
  */
 
-/// <reference path="../../font-roboto/roboto.d.ts" />
+/// <reference path="../../font-roboto-local/roboto.d.ts" />
 
