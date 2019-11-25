@@ -18,7 +18,7 @@ Design typography section.
 */
 
 import '@polymer/polymer/polymer-legacy.js';
-import '@polymer/font-roboto/roboto.js';
+import '@polymer/font-roboto-local/roboto.js';
 
 import {html} from '@polymer/polymer/lib/utils/html-tag.js';
 const template = html`<custom-style>
