@@ -22,7 +22,7 @@
   ],
   "dependencies": {
     "iron-flex-layout": "PolymerElements/iron-flex-layout#^1.0.0",
-    "font-roboto": "PolymerElements/font-roboto#^1.0.1",
+    "font-roboto-local": "PolymerElements/font-roboto-local#^3.0.2",
     "polymer": "Polymer/polymer#^1.0.0"
   },
   "devDependencies": {
