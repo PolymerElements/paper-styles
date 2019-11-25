@@ -9,5 +9,5 @@
  */
 
 /// <reference path="../polymer/types/polymer.d.ts" />
-/// <reference path="../font-roboto/roboto.d.ts" />
+/// <reference path="../font-roboto-local/roboto.d.ts" />
 
